@@ -8,9 +8,10 @@ public class MatrixSize {
     public static void main(String[] args) {
         int[][] matrix = {
                 {2, 3, 5, 4},
-                {5, 9, 8}};
+                {5, 9, 8}
+        };
 
-        int[][] matrix2 = new int[3][2];
+        int[][] matrix2;
         matrix2 = new int[][]{
                 {2, 3,8},
                 {5, 9,5},

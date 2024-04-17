@@ -4,6 +4,7 @@ package lambda;
 interface A {
     int addition(int a, int b);
 }
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,11 +15,12 @@ public class Main {
 //            System.out.println(a+b);
 //        }
 //        };
+
 //        Lambda Expression
 
-        A obj = (a, b) -> a+b;
+        A obj = (a, b) -> a + b;
 
-        int result=obj.addition(5, 6);
+        int result = obj.addition(5, 6);
         System.out.println(result);
 
 

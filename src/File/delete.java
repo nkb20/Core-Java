@@ -9,7 +9,6 @@ public class delete {
 
         try{
             File file=new File("newFile1.txt");
-
             if(file.delete()){
                 System.out.println("file deleted succesfully");
             }

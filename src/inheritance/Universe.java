@@ -9,6 +9,7 @@ public class Universe {
 
 class planet extends Universe {
     public void planetEarth() {
+
         System.out.println("Human lives");
     }
 

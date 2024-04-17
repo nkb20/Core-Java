@@ -6,6 +6,7 @@ class implementsClass implements firstInterface,secondInterface {
     @Override
     public void myMethod() {
         System.out.println("dd");
+
     }
 
     @Override

@@ -1,7 +1,7 @@
 package list;
 import java.util.Arrays;
 class Solution {
-    public static void merge(int[] nums1, int m, int[] nums2, int n) {
+    public static void merge(int nums1[], int m, int[] nums2, int n) {
         //i= indexing of Array nums1 (length-1)
         int i = m - 1;
         //j= indexing of Array nums2 (length-1)

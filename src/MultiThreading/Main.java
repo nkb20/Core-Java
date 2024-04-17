@@ -1,15 +1,17 @@
 package MultiThreading;
+
 // Using extends thread
-class M1 extends Thread{
+class M1 extends Thread {
     @Override
-        public void run(){
-            int i=0;
-            while(i<10){
-                System.out.println("I am good");
-                i++;
-            }
+    public  void run() {
+        int i = 0;
+        while (i < 10) {
+            System.out.println("I am good");
+            i++;
         }
+    }
 }
+
 class M2 extends Thread {
     @Override
     public void run() {
@@ -21,7 +23,7 @@ class M2 extends Thread {
     }
 }
 
- class Main {
+class Main {
     public static void main(String[] args) {
 
         M1 thread1 = new M1();

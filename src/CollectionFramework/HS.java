@@ -11,7 +11,7 @@ public class HS {
         System.out.println("Enter number of students for Roll no.");
         int std=scn.nextInt();
 
-        HashSet<Integer> number=new HashSet<>(std);
+        HashSet<Integer> number=new HashSet<>();
         System.out.println("Enter roll no.");
 
         for (int i=0;i<std;i++){
@@ -27,7 +27,6 @@ public class HS {
         Iterator it=  number.iterator();
         while(it.hasNext()){
             System.out.print(it.next()+" ");
-
         }
     }
 }

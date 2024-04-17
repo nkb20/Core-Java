@@ -1,27 +1,39 @@
 package File;
+
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class NewFile {
 
     public static void main(String[] args) {
         try {
-            File obj = new File("newFile.txt");
+            File file = new File("test.txt");
 
-            File obj1 = new File("newFile1.txt");
-            obj1.createNewFile();
+            if (file.createNewFile()) {
+                System.out.println("File created :" + file.getName());
+            } else System.out.println("file already exists");
 
-            if(obj.createNewFile()){
-                System.out.println("File created :"+obj.getName());
+            FileWriter fileWriter = new FileWriter("test.txt");
+            fileWriter.write("Aftab khan");
+            fileWriter.close();
+
+            File n=new File("test.txt");
+            Scanner scn=new Scanner(n);
+            while (scn.hasNextLine()){
+                System.out.println(scn.nextLine());
             }
-            else System.out.println("file already exists");
 
-        }catch (IOException e)
-        {
+            FileWriter d = new FileWriter("test.txt",true);
+            d.write("HUm");
+            d.close();
+
+
+        } catch (IOException e) {
             System.out.println("an error occurred");
             e.printStackTrace();
         }
-
 
 
     }
